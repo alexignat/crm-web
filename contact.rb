@@ -5,7 +5,7 @@ class Contact
   # @@id = 1 This assingment has id stored in the rolodex
 
   def initialize(first_name, last_name, email, note)
-    @id = @@id
+    # @id = @@id This assingment has id stored in rolodex
     # @@id += 1 This assingment has id stored in the rolodex
     @first_name = first_name.capitalize
     @last_name = last_name.capitalize
