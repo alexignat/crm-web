@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Web CRM</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>CRM Web App</title>
+  </head>
+  <body>
+    <header>
+      <h2>
+        Greatest CRM Web App Ever
+      </h2>
+    </header>
 
-  <header>
-    This is the Header of my CRM App
-  </header>
+    <%= yield %>
 
-  <h1>
-    Greatest CRM Web App Ever Created
-  </h1>
-
-  <%= yield %>
-
-  <footer>
-    Alex Ignat Master Web Dev &copy;
-  </footer>
-
-
-</body>
+    <footer>
+      Alex Ignat Master Web Dev &copy;
+    </footer>
+  </body>
 </html>
