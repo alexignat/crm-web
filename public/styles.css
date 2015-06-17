@@ -1,3 +1,5 @@
+/*layout.erb*/
+
 header {
   color: #000099;
   font-style: italic;
@@ -8,6 +10,37 @@ footer {
   color: #000099;
   font-style: italic;
   text-align: center;
+  clear: both;
+  background: #cc9;
+}
+
+/*index.erb*/
+
+h1 {
+  color: #202020 ;
+}
+
+.center {
+  text-align: center;
+}
+
+.left_column {
+  float: left;
+  background-color: blue;
+  width: 50%;
+}
+
+.right_column {
+  float: right;
+  background-color: red;
+  width: 50%;
+  text-align: center;
+}
+
+.right_column ul {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
 }
 
 

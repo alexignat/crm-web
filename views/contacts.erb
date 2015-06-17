@@ -1,8 +1,14 @@
-<h1>All Contacts<h1>
+<div class="left_column">
+  <h1>All Contacts<h1>
 
-<ul>
-<% $rolodex.contacts.each do |contact| %>
-  <li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
- <% end %>
- <li><a href="/contacts/new">Add a new contact</a>
-</ul>
+  <ul>
+  <% $rolodex.contacts.each do |contact| %>
+    <li>
+      <%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %>
+    </li>
+   <% end %>
+   <li>
+    <a href="/contacts/new">Add a new contact</a>
+   </li>
+  </ul>
+</div>
