@@ -17,6 +17,10 @@ get '/contacts/new' do
   erb :new_contact
 end
 
+get '/index' do
+  erb :index
+end
+
 post '/contacts' do
   new_contact = Contact.new(params[:first_name], params[:last_name], params[:email], params[:note])
   $rolodex.add_contact(new_contact)
