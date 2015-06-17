@@ -15,7 +15,13 @@ footer {
   background: #cc9;
 }
 
-/*index.erb*/
+.home_link {
+  display: inline-block;
+}
+
+.contacts_link {
+  display: inline-block;
+}
 
 h1 {
   color: #202020;
@@ -44,6 +50,10 @@ h1 {
   margin: auto;
   padding: 10px;
 }
+
+
+
+
 
 
 
