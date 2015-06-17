@@ -23,9 +23,7 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-get '/new_contact' do
-  erb :new_contact
-end
+
 
 
 
