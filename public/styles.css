@@ -3,6 +3,7 @@
 header {
   color: #000099;
   font-style: italic;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -17,7 +18,8 @@ footer {
 /*index.erb*/
 
 h1 {
-  color: #202020 ;
+  color: #202020;
+  font-size: 25px;
 }
 
 .center {
