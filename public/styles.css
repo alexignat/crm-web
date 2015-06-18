@@ -68,7 +68,11 @@ h1 {
   text-decoration: none;
 }
 
+/*button on contacts page*/
 
+.center a {
+  text-decoration: none;
+}
 
 
 

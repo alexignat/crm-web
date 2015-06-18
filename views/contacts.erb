@@ -2,21 +2,21 @@
   <h1>Manage contacts</h1>
 </div>
 
-<div class="left_column">
- <h1>All Contacts<h1>
-    <% $rolodex.contacts.each do |contact| %>
-    <a href="/contacts/<%= contact.id %>">
-      <li>
-        <%= contact.first_name %> <%= contact.last_name %>
-      </li>
-    </a>
-   <% end %>
-</div>
+<div class="center">
+  <button class="add_contact">
+    <p>
+      <a href="/contacts/new">Add a new contact</a>
+    </p>
+  </button>
 
-<div class="right_column">
-  <ul>
-   <li>
-    <a href="/contacts/new">Add a new contact</a>
-   </li>
-  </ul>
+  <div class="all_contacts_div">
+   <h1>All Contacts<h1>
+      <% $rolodex.contacts.each do |contact| %>
+      <a href="/contacts/<%= contact.id %>">
+        <li>
+          <%= contact.first_name %> <%= contact.last_name %>
+        </li>
+      </a>
+     <% end %>
+  </div>
 </div>
