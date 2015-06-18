@@ -5,6 +5,11 @@
 <p><strong>Email:</strong> <%= @contact.email %></p>
 <p><strong>Note:</strong> <%= @contact.note %></p>
 
+
+<!-- Links to edit contact page -->
+<button><a href="/contacts/<%= @contact.id %>/edit">Edit</a></button>
+
+<!-- Deletes a contact -->
 <form action="/contacts/<%= @contact.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" name="Delete Contact" value="Delete">

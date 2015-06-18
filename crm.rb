@@ -4,10 +4,6 @@ require 'sinatra'
 
 $rolodex = Rolodex.new # ??
 
-$rolodex.add_contact(Contact.new("Alex", "Ignat", "alex@ignat.com", "is cool"))
-$rolodex.add_contact(Contact.new("David", "Lang", "david@lang.com", "is not cool"))
-$rolodex.add_contact(Contact.new("Ryan", "Petrillo", "ryan@petrillo.com", "is not cool"))
-$rolodex.add_contact(Contact.new("Sacha", "Guberman", "sacha@guberman.com", "is not cool"))
 
 get '/' do
   @crm_app_name = "your CRM"
