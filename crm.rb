@@ -5,6 +5,9 @@ require 'sinatra'
 $rolodex = Rolodex.new # ??
 
 $rolodex.add_contact(Contact.new("Alex", "Ignat", "alex@ignat.com", "is cool"))
+$rolodex.add_contact(Contact.new("David", "Lang", "david@lang.com", "is not cool"))
+$rolodex.add_contact(Contact.new("Ryan", "Petrillo", "ryan@petrillo.com", "is not cool"))
+$rolodex.add_contact(Contact.new("Sacha", "Guberman", "sacha@guberman.com", "is not cool"))
 
 get '/' do
   @crm_app_name = "your CRM"
@@ -19,9 +22,13 @@ get '/contacts/new' do
   erb :new_contact
 end
 
-get '/contacts/1000' do
-  @contact = $rolodex.find_contact(1000)
-  erb :show_contact
+get '/contacts/:id' do
+  @contact = $rolodex.find_contact(params[:id])
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 post '/contacts' do
