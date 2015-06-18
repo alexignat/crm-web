@@ -57,6 +57,17 @@ h1 {
 }
 
 
+/*button on front page*/
+
+.choice {
+  background-color: #C0C0C0;
+}
+
+.choice a {
+  color: #000099;
+  text-decoration: none;
+}
+
 
 
 
