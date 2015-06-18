@@ -38,6 +38,11 @@ h1 {
   width: 50%;
 }
 
+.left_column h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
 .right_column {
   float: right;
   background-color: red;
