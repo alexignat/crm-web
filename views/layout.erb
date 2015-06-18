@@ -6,32 +6,40 @@
     <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
   <body>
-    <header>
-      <h2>
-        The Greatest CRM Web App Ever
-      </h2>
+    <div id="wrapper">
+      <div id="header">
+        <header>
+          <h2>
+            The Greatest CRM Web App Ever
+          </h2>
 
-      <div class="home_link">
-        <a href="/">
-          <p>
-            Home
-          </p>
-        </a>
+          <div class="home_link">
+            <a href="/">
+              <p>
+                Home
+              </p>
+            </a>
+          </div>
+
+          <div class="contacts_link">
+            <a href="/contacts">
+              <p>
+                Manage Contacts
+              </p>
+            </a>
+        </div>
+      </header>
       </div>
 
-      <div class="contacts_link">
-        <a href="/contacts">
-          <p>
-            Manage Contacts
-          </p>
-        </a>
+      <div id="content">
+        <%= yield %>
       </div>
-    </header>
 
-    <%= yield %>
-
-    <footer>
-      Alex Ignat Master Web Dev &copy;
-    </footer>
+      <div id="footer">
+        <footer>
+          Alex Ignat Master Web Dev &copy;
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
