@@ -13,6 +13,7 @@ class Rolodex
   end
 
   def find_contact(contact_id)
+    contact_id = contact_id.to_i
     @contacts.find { |contact| contact.id == contact_id }
   end
 end
