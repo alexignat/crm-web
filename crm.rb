@@ -11,6 +11,16 @@ class Contact
   property :last_name, String
   property :email, String
   property :note, String
+
+  #setter methods
+  def first_name=(val)
+    super val.capitalize
+  end
+
+  def last_name=(val)
+    super val.capitalize
+  end
+
 end
 
 DataMapper.finalize
