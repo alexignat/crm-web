@@ -1,5 +1,7 @@
 require_relative 'rolodex'
 require_relative 'contact'
+
+require 'data_mapper'
 require 'sinatra'
 
 $rolodex = Rolodex.new # ??
