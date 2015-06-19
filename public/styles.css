@@ -1,4 +1,33 @@
 /*layout.erb*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  background: #00A3CC;
+  padding: 10px;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #00A3CC;
+}
 
 header {
   color: #000099;
@@ -8,11 +37,9 @@ header {
 }
 
 footer {
-  color: #000099;
   font-style: italic;
   text-align: center;
-  clear: both;
-  background: #cc9;
+  background-color: #19839E;
 }
 
 .home_link {
@@ -56,7 +83,6 @@ h1 {
   padding: 10px;
 }
 
-
 /*button on front page*/
 
 .choice {
@@ -73,6 +99,9 @@ h1 {
 .center a {
   text-decoration: none;
 }
+
+
+
 
 
 
