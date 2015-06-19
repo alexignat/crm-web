@@ -11,7 +11,7 @@
 
   <div class="all_contacts_div">
    <h1>All Contacts<h1>
-      <% $rolodex.contacts.each do |contact| %>
+      <% @contacts.each do |contact| %>
       <a href="/contacts/<%= contact.id %>">
         <li>
           <%= contact.first_name %> <%= contact.last_name %>
